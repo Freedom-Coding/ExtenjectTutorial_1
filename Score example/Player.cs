@@ -36,7 +36,7 @@ namespace TestExtenject
 
         private void Move()
         {
-            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y);
+            rb.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.linearVelocity.y);
 
             if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
             {
